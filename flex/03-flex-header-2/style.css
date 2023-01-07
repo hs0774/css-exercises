@@ -12,7 +12,16 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-}
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  
+
+
+
+} /* ok so we display flex to make a container of everythingv in a row, then we put space between 
+so the items and we put some padding to give it space as of right now we have 
+logo  some space, links ,some space ,new notif, space, blue circle  */
 
 .profile-image {
   background: rebeccapurple;
@@ -20,6 +29,8 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+
+
 }
 
 .logo {
@@ -27,6 +38,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+
+
 }
 
 button {
@@ -35,6 +48,7 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  
 }
 
 a {
@@ -45,4 +59,20 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 16px;
+  margin: 0px;
+  padding: 0px;
+
+
+}  /*after editing head and creating a container this is in the middlish*/
+
+.left,.right{
+ display: flex; 
+ gap:16px;
+ align-items: center;
+
+
+/*the containers are aligned with the original container now since left and right were also 
+ divs but with a display flex they match with their container. */
 }
